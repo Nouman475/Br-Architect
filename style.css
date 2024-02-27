@@ -1,0 +1,212 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    box-shadow: 0px 6px 10px rgba(128, 128, 128, 0.504) ;
+}
+.logo {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.logo-name {
+    font-size: 1.2rem;
+    margin-left: 10px;
+
+}
+.logo-name span {
+    color: #ffc107;
+    margin-right: 10px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+.nav a {
+    color: #000000;
+    width: 100px;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    padding: 10px 3px;
+    text-align: center;
+    transition: background-color  0.1s ease;
+}
+.nav a:hover{
+    background-color: rgba(128, 128, 128, 0.504);
+}
+/*MAIN SECTION*/
+.outer, .container{
+    width: 95%;
+    margin: auto;
+}
+.hero-section {
+    background-image: url('Asset/Images/architect.jpg');
+    height: 60vw;
+    width: auto;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.logo-text {
+    font-size: 3em;
+    background-color: black;
+    padding: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.architect-text {
+    font-size: 2em;
+    display: inline-block;
+}
+.projects, .member .name{
+    font-size: 2rem;
+}
+/*HOUSE PROJECT SECTION*/
+.house-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.box {
+    width: 24%; 
+    height: 200px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: black;
+}
+.about{
+    font-size: larger;
+}
+.members-team{
+    display: flex;
+    margin:70px 0px ;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.member{
+    height: 450px;
+    width: 24%;
+}
+.member img{
+    filter:grayscale(60%);
+}
+.fade{
+    opacity: 0.6;
+    font-size: 0.9rem;
+    padding: 6px 3px;
+}
+.member button{
+    margin-top: 17px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 1.1rem;
+    transition: background-color  0.1s ease;
+}
+.member button:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.504);
+}
+.touch{
+    margin-top: 30px;
+    padding-bottom:5px ;
+}
+form input, form textarea{
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+    border-radius: 3px;
+    resize: none;
+}
+form input[placeholder], form textarea[placeholder]{
+    font-size: 1rem;
+    padding: 2px 5px;
+}
+form button{
+    margin: 15px 0px;
+    padding: 8px 12px;
+    background-color: #000000;
+    color: white;
+    font-size: 1rem;
+    transition: all  0.1s ease;
+    border: none;
+}
+form button:hover{
+    background-color: #b9b5b5ba;
+    color: #000000;
+    cursor: pointer;
+}
+/*MAP OF FOOTER*/
+.map{
+    background-image: url(Asset/Images/map.jpg);
+    height: 50vw;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*FOOTER SECTION STYLING*/
+footer{
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    height:4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    font-size: 1.1rem;
+    font-weight:bold ;
+}
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px) {
+    .box {
+        width: 48%;
+    }
+    .member{
+        width: 48%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .box, .member {
+        width: 100%;
+    }
+    .nav{
+        display: none;
+    }
+}
